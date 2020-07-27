@@ -1,0 +1,29 @@
+application:
+  profiles:
+    active: local
+---
+configuration:
+  profiles: local
+  databases:
+    - source:
+        dbmsType: oracle
+        ipAddress: localhost
+        port: 1521
+        dbName: orcl
+        queryName: oracle.xml
+        #jdbcUrl: bla
+    - columns:
+        messageKey: msgkey
+        result: R_RESULT
+        status: status
+---
+#configuration:
+  #profiles: local
+  #database:
+  #  - source:
+  #      dbmsType: oracle
+  #      ipAddress: localhost
+  #      port: 1521
+  #      dbName: orcl
+  #  - property:
+  #      queryName: oracle.xml

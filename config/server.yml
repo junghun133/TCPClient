@@ -1,0 +1,39 @@
+application:
+  profiles:
+    active: local
+
+#real
+---
+configuration:
+  profiles: real
+  servers:
+    - server:
+        ipAddress: 121.167.147.14
+        port: 9111
+        cpId: pjh
+        cpPassword: pjh
+        databaseConfig: database.yml
+    #- server:
+        #ipAddress: 121.167.147.14
+        #port: 9111
+        #cpId: pjh
+        #cpPassword: pjh
+        #databaseConfig: database.yml
+
+#test
+---
+configuration:
+  profiles: local
+  servers:
+    - server:
+        ipAddress: 121.167.147.14
+        port: 9111
+        cpId: pjh
+        cpPassword: pjh
+        databaseConfig: database.yml
+        #- server:
+        #ipAddress: 121.167.147.14
+        #port: 9111
+        #cpId: pjh
+        #cpPassword: pjh
+        #databaseConfig: database.yml
