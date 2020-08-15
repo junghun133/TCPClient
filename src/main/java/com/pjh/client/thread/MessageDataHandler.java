@@ -4,7 +4,7 @@ import com.pjh.client.configuration.ServiceConfiguration;
 import com.pjh.client.database.DataHandler;
 import com.pjh.client.message.MessageEntry;
 
-public abstract class MessageDataHandler extends IMORunnable {
+public abstract class MessageDataHandler extends TCPRunnable {
     protected DataHandler dataHandler;
 
     public MessageDataHandler(ServiceConfiguration config, MessageEntry entry, DataHandler dataHandler) {
